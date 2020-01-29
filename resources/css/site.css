@@ -43,7 +43,7 @@ mark {
 
 
     img {
-        @apply border-4 mb-4;
+        @apply border-4 mb-4 max-w-full;
     }
 
     > table {
