@@ -1,0 +1,12 @@
+<header class="lg:absolute left-0 top-32 text-center w-full flex items-center justify-center">
+    <h1 class="uppercase text-lg bg-aqua px-2 shadow lg:h-10 leading-relaxed">
+        {{ settings:site_name }}
+    <h1>
+</header>
+<div class="content pt-8">
+    {{ collection:articles }}
+    <div class="my-8 lg:my-2 text-lg">
+        {{ date format="Y_m_d" }}<span class="hidden lg:inline">...</span><a href="{{ url }}" class="block lg:inline">{{ title }}</a>
+    </div>
+    {{ /collection:articles }}
+</div>

@@ -1,0 +1,30 @@
+title: 'Global Settings'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: site_name
+        field:
+          type: text
+          display: 'Site Name'
+      -
+        handle: links
+        field:
+          fields:
+            -
+              handle: name
+              field:
+                type: text
+                display: Name
+            -
+              handle: url
+              field:
+                type: text
+                display: URL
+          mode: table
+          add_row: 'Add Link'
+          reorderable: true
+          type: grid
+          instructions: 'Set links in the bottom nav bar. A keyboard shortcut will be assigned to the first letter of the name.'
+          display: Links

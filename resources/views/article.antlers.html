@@ -1,0 +1,19 @@
+<header class="lg:absolute left-0 top-32 text-center w-full flex items-center justify-center">
+    <h1 class="uppercase text-lg bg-aqua px-2 shadow lg:h-10 leading-relaxed">
+        {{ collection:previous limit="1" }}
+            <a href="{{ url }}" class="{{ no_results ? 'opacity-25 cursor-text' : 'hover:text-blue' }}"><<<</a>
+            {{ unless no_results }}<keyboard-link url="{{ url }}" :code="37"></keyboard-link>{{ /if }}
+        {{ /collection:previous }}
+            {{ title }}
+        {{ collection:next limit="1" }}
+            <a href="{{ url }}" class="{{ no_results ? 'opacity-50 cursor-text' : 'hover:text-blue' }}">>>></a>
+            {{ unless no_results }}<keyboard-link url="{{ url }}" :code="37"></keyboard-link>{{ /if }}
+        {{ /collection:next }}
+    </h1>
+</header>
+
+<div class="content pt-8">
+    {{ glide:batch width="600" height="400" fit="crop" pixelate="4" }}
+        {{ content remove_left="<p>" ensure_left="<p>{{date}}..." widont="true" }}
+    {{ /glide:batch}}
+</div>
