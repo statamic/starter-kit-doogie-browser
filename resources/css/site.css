@@ -28,7 +28,8 @@ mark {
     }
 
     ul:not(.list-none) {
-        @apply pl-0 list-disc ml-16 mb-6;
+        @apply pl-0 ml-16 mb-6;
+        list-style-type: square;
         li {
             @apply mb-1;
         }
