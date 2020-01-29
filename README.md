@@ -28,7 +28,7 @@
 **1. Create a new site** cloning the repo and removing the origin repo.
 
 ```
-git clone git@github.com:statamic/statamic-starter-doogie-browser.git new-site
+git clone git@github.com:statamic/starter-kit-doogie-browser.git new-site
 cd my-site
 rm -rf .git
 composer install
