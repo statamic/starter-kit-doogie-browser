@@ -23,6 +23,10 @@
 
 ![Screenshot](https://github.com/statamic/statamic-starter-doogie-browser/raw/master/screenshot.png)
 
+## Video Tour
+
+Watch the [Doogie Browser video tour](https://www.youtube.com/watch?v=-cLzCWu-DeE) to see what's going on under the hood.
+
 ## Quick Start
 
 **1. Create a new site** cloning the repo and removing the origin repo.
