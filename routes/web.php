@@ -11,6 +11,6 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::statamic('/', 'home', [
+    'title' => 'Home'
+]);
