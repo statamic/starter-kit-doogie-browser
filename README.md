@@ -32,8 +32,8 @@ Watch the [Doogie Browser video tour](https://www.youtube.com/watch?v=-cLzCWu-De
 **1. Create a new site** cloning the repo and removing the origin repo.
 
 ```
-git clone git@github.com:statamic/starter-kit-doogie-browser.git new-site
-cd my-site
+git clone git@github.com:statamic/starter-kit-doogie-browser.git diary
+cd diary
 rm -rf .git
 composer install
 cp .env.example .env && php artisan key:generate
