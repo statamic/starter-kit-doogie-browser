@@ -1,8 +1,6 @@
 title: Articles
 route: '{slug}'
 template: article
-blueprints:
-  - article
 revisions: false
 date: true
 date_behavior:
