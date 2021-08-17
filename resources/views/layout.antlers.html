@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title }} — {{ settings:site_name }}</title>
+        <meta name="description" content="{{ excerpt ?? title ?? settings:site_name }}">
+        <meta name="theme-color" content="0030FF">
+        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+    </head>
+    <body class="bg-blue px-2 lg:px-12 font-mono text-base leading-normal text-white">
+        <div class="lg:h-screen py-2 lg:py-12 relative">
+            <div class="border-2 mb-8 lg:mb-0 p-1 h-full">
+                <article class="border-2 p-4 lg:p-8 h-full overflow-y-scroll" id="site">
+                    {{ template_content }}
+                    <footer class="lg:absolute bottom-34 w-full lg:flex items-center justify-center">
+                        <link-toolbar links="{{ settings:links | json | entities }}"></link-toolbar>
+                    </footer>
+                </article>
+            </div>
+            <a href="https://statamic.com" class="absolute bottom-0 lg:pb-2 uppercase text-aqua-light hover:text-white right-0">Powered by Statamic</a>
+        </div>
+        <script src="{{ mix src='/js/site.js' }}"></script>
+    </body>
+</html>

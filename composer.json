@@ -1,0 +1,9 @@
+{
+    "name": "statamic/starter-kit-doogie-browser",
+    "extra": {
+        "statamic": {
+            "name": "Starter Kit Doogie Browser",
+            "description": "Statamic Starter Kit: Doogie Browser"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+id: 9242876a-41c4-42f8-96f8-ac92d6025406
+title: Settings
+data:
+  site_name: 'My Secret Public Diary'
+  links:
+    -
+      name: Home
+      url: '/'
+    -
+      name: Twitter
+      url: 'https://twitter.com/statamic'
+    -
+      name: Github
+      url: 'https://github.com/statamic/starter-kit-doogie-browser'

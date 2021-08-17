@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'ibm_vga8';
+    src: url('/fonts/ibm_vga8.woff2') format('woff2'),
+         url('/fonts/ibm_vga8.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+mark {
+    @apply bg-transparent text-red;
+}
+
+.content {
+
+    p {
+        @apply mb-6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply text-lg uppercase;
+    }
+
+    a {
+        @apply bg-white text-blue px-1;
+        &:hover {
+            @apply text-red;
+        }
+    }
+
+    ul:not(.list-none) {
+        @apply pl-0 ml-16 mb-6;
+        list-style-type: square;
+        li {
+            @apply mb-1;
+        }
+    }
+
+    > blockquote {
+        @apply font-bold text-lg mb-6 border-l-4 border-aqua pl-8 ml-8 py-8;
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+    img {
+        @apply border-4 mb-4 max-w-full;
+    }
+
+    > table {
+        @apply w-auto text-left border-2 border-collapse mb-6;
+        th {
+            @apply py-1 px-4 uppercase tracking-widest border-2;
+        }
+
+        td {
+            @apply py-1 px-4 border-2;
+        }
+
+        p {
+            @apply leading-normal;
+        }
+  }
+}
+
+@screen lg {
+    .content img {
+        @apply float-left mr-8;
+    }
+}
