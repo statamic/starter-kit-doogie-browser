@@ -5,5 +5,10 @@
             "name": "Starter Kit Doogie Browser",
             "description": "Statamic Starter Kit: Doogie Browser"
         }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@php upgrade-cli-notice.php"
+        ]
     }
 }
