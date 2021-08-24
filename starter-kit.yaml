@@ -1,0 +1,16 @@
+export_paths:
+  - content
+  - resources/blueprints
+  - resources/css
+  - resources/js
+  - resources/views
+  - routes/web.php
+  - public/assets
+  - public/css
+  - public/js
+  - public/fonts
+  - package.json
+  - tailwind.config.js
+  - webpack.mix.js
+  - .env.example
+  - README.md
