@@ -12,5 +12,4 @@ export_paths:
   - package.json
   - tailwind.config.js
   - webpack.mix.js
-  - .env.example
   - README.md
