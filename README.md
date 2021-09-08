@@ -3,8 +3,11 @@
   Statamic Starter Kit: Doogie Browser
 </h1>
 
-![Statamic 3.2+](https://img.shields.io/badge/Statamic-3.0+-FF269E?style=for-the-badge&link=https://statamic.com)
+![Statamic 3.2+](https://img.shields.io/badge/Statamic-3.2+-FF269E?style=for-the-badge&link=https://statamic.com)
+
+> View on the [Statamic Marketplace](https://statamic.com/starter-kits/statamic/doogie-browser)!
 <!-- /statamic:hide -->
+
 ## Features
 - Articles blogging collection with homepage listing
 - Markdown focused writing experience
@@ -19,49 +22,39 @@
 - [PurgeCSS](https://purgecss.com/) for that tiny `4kb` css file size
 - :100: Lighthouse score
 
-<!-- statamic:hide -->
-## Screenshot
 
-![Screenshot](/screenshot.png)
-
-## Video Tour
-
-Watch the [Doogie Browser video tour](https://www.youtube.com/watch?v=-cLzCWu-DeE) to see what's going on under the hood.
-<!-- /statamic:hide -->
 ## Quick Start
 
-**1. Create a new site** cloning the repo and removing the origin repo.
+### Install as a New Site
+You can spin up a new install of Statamic along with this Starter Kit all in one command by using the [Statamic CLI Tool](https://github.com/statamic/cli)
 
 ```
-git clone git@github.com:statamic/starter-kit-doogie-browser.git diary
-cd diary
-rm -rf .git
-composer install
-cp .env.example .env && php artisan key:generate
+statamic new mysite statamic/starter-kit-starters-creek
 ```
 
-**2. Make a new user** – you'll want it to be a `super` so you have access to everything.
+Follow the prompts and you'll be up and running shortly.
+
+### Install into an existing site
+You can alternatively install Starter Kits into an existing Statamic 3.2+ site by running the following command while inside that install's root directory:
 
 ```
-php please make:user
+php please starter-kit:install statamic/starter-kit-starters-creek
 ```
 
-**3. Recompile the CSS** (optional)
 
-The [TailwindCSS](https://tailwindcss.com/) included in this kit is compiled with [PurgeCSS](https://purgecss.com/) to reduce filesize on any unused classes and selectors. If you want to modify anything, just recompile it.
+### Customizing (optional)
+
+The [TailwindCSS](https://tailwindcss.com/) included in this kit is compiled with [PurgeCSS](https://purgecss.com/) to reduce filesize on any unused classes and selectors. If you want to modify anything you'll need to recompile it.
 
 ```
 npm i && npm run dev
 ```
 
 To compile for production again:
+
 ```
 npm run production
 ```
-
-**4. Do your thing!**
-
-If you're using [Laravel Valet](https://laravel.com/docs/valet) (or similar), your site should be available at `http://diary.test`. You can access the control panel at `http://diary.test/cp` and login with your new user. Open up the source code, follow along with the [Statamic 3 docs](https://statamic.dev), and enjoy!
 
 ## Contributing
 
