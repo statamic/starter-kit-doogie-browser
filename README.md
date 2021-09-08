@@ -29,7 +29,7 @@
 You can spin up a new install of Statamic along with this Starter Kit all in one command by using the [Statamic CLI Tool](https://github.com/statamic/cli)
 
 ```
-statamic new mysite statamic/starter-kit-starters-creek
+statamic new mysite statamic/starter-kit-doogie-browser
 ```
 
 Follow the prompts and you'll be up and running shortly.
@@ -38,7 +38,7 @@ Follow the prompts and you'll be up and running shortly.
 You can alternatively install Starter Kits into an existing Statamic 3.2+ site by running the following command while inside that install's root directory:
 
 ```
-php please starter-kit:install statamic/starter-kit-starters-creek
+php please starter-kit:install statamic/starter-kit-doogie-browser
 ```
 
 
