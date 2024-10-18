@@ -1,9 +1,13 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 @font-face {
     font-family: 'ibm_vga8';
-    src: url('/fonts/ibm_vga8.woff2') format('woff2'),
-         url('/fonts/ibm_vga8.woff') format('woff');
-    font-weight: normal;
     font-style: normal;
+    font-weight: normal;
+    src: url('/resources/fonts/ibm_vga8.woff2') format('woff2'),
+         url('/resources/fonts/ibm_vga8.woff') format('woff');
 }
 
 mark {
@@ -36,12 +40,11 @@ mark {
     }
 
     > blockquote {
-        @apply font-bold text-lg mb-6 border-l-4 border-aqua pl-8 ml-8 py-8;
+        @apply font-bold text-xl mb-6 border-l-4 border-aqua pl-8 ml-8 py-8;
         p:last-child {
             margin-bottom: 0;
         }
     }
-
 
     img {
         @apply border-4 mb-4 max-w-full;

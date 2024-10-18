@@ -1,19 +1,23 @@
-<header class="lg:absolute left-0 top-32 text-center w-full flex items-center justify-center">
+<header class="lg:absolute left-0 top-8 text-center w-full flex items-center justify-center" x-data>
     <h1 class="uppercase text-lg bg-aqua px-2 shadow lg:h-10 leading-relaxed">
         {{ collection:newer limit="1" }}
-            <a href="{{ no_results ? "/" : url }}" class="{{ no_results ? 'opacity-25 cursor-text' : 'hover:text-blue' }}"><<<</a>
-            <keyboard-link url="{{ no_results ? "/" : url }}" :code="37"></keyboard-link>
+            <a href="{{ url ?? '/' }}" class="{{ no_results ? 'opacity-25 cursor-text' : 'hover:text-blue' }}" @keyup.left.window="window.location.href = '{{ no_results ? '/' : url }}'">
+                <<<
+            </a>
         {{ /collection:newer }}
-            {{ title }}
+
+        {{ title }}
+
         {{ collection:older limit="1" }}
-            <a href="{{ url }}" class="{{ no_results ? 'opacity-50 cursor-text' : 'hover:text-blue' }}">>>></a>
-            {{ unless no_results }}<keyboard-link url="{{ url }}" :code="39"></keyboard-link>{{ /if }}
+            <a href="{{ url }}" class="{{ no_results ? 'opacity-50 cursor-text' : 'hover:text-blue' }}" @keyup.right.window="window.location.href = '{{ url ?? '/' }}'">
+                >>>
+            </a>
         {{ /collection:older }}
     </h1>
 </header>
 
 <div class="content pt-8">
     {{ glide:batch width="640" height="480" fit="crop" pixelate="4" }}
-        {{ content remove_left="<p>" ensure_left="<p>{{date}}..." widont="true" }}
+        {{ content | remove_left("<p>") | ensure_left("<p>{date}...") | widont }}
     {{ /glide:batch}}
 </div>
