@@ -4,12 +4,12 @@ export_paths:
   - resources/css
   - resources/js
   - resources/views
+  - resources/fonts
   - routes/web.php
   - public/assets
   - public/css
   - public/js
-  - public/fonts
   - package.json
   - tailwind.config.js
-  - webpack.mix.js
+  - vite.config.js
   - README.md
