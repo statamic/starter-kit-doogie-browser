@@ -1,0 +1,15 @@
+{
+  "resources/css/site.css": {
+    "file": "assets/site-CydsATiR.css",
+    "src": "resources/css/site.css",
+    "isEntry": true
+  },
+  "resources/fonts/ibm_vga8.woff": {
+    "file": "assets/ibm_vga8-euaoFEp9.woff",
+    "src": "resources/fonts/ibm_vga8.woff"
+  },
+  "resources/fonts/ibm_vga8.woff2": {
+    "file": "assets/ibm_vga8-CPxoLRKf.woff2",
+    "src": "resources/fonts/ibm_vga8.woff2"
+  }
+}
