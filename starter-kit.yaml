@@ -7,8 +7,7 @@ export_paths:
   - resources/fonts
   - routes/web.php
   - public/assets
-  - public/css
-  - public/js
+  - public/build
   - package.json
   - tailwind.config.js
   - vite.config.js
