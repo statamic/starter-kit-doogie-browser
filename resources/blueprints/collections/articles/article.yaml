@@ -30,3 +30,4 @@ sections:
           type: users
           display: Author
           default: current
+          max_items: 1
