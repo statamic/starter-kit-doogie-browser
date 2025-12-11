@@ -1,0 +1,11 @@
+site_name: 'My Secret Public Diary'
+links:
+  -
+    name: Home
+    url: '/'
+  -
+    name: Twitter
+    url: 'https://twitter.com/statamic'
+  -
+    name: Github
+    url: 'https://github.com/statamic/starter-kit-doogie-browser'
