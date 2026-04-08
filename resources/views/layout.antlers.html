@@ -4,8 +4,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title }} — {{ settings:site_name }}</title>
-        <meta name="description" content="{{ excerpt ?? title ?? settings:site_name }}">
+        {{ if {installed:statamic/seo-pro} }}
+            {{ seo_pro:meta }}
+        {{ else }}
+            <title>{{ title }} — {{ settings:site_name }}</title>
+            <meta name="description" content="{{ excerpt ?? title ?? settings:site_name }}">
+        {{ /if }}
         <meta name="theme-color" content="0030FF">
         {{ vite src="resources/css/site.css" }}
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
