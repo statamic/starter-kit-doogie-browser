@@ -1,5 +1,6 @@
 export_paths:
   - content
+  - resources/addons/seo-pro.yaml
   - resources/blueprints
   - resources/css
   - resources/js
