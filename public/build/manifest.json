@@ -1,8 +1,16 @@
 {
   "resources/css/site.css": {
-    "file": "assets/site-D72fQdmO.css",
+    "file": "assets/site-KSonRsFF.css",
+    "name": "site",
+    "names": [
+      "site.css"
+    ],
     "src": "resources/css/site.css",
-    "isEntry": true
+    "isEntry": true,
+    "assets": [
+      "assets/ibm_vga8-CPxoLRKf.woff2",
+      "assets/ibm_vga8-euaoFEp9.woff"
+    ]
   },
   "resources/fonts/ibm_vga8.woff": {
     "file": "assets/ibm_vga8-euaoFEp9.woff",
