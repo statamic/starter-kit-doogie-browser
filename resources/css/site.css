@@ -1,6 +1,27 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
+
+@theme {
+    --shadow-*: initial;
+    --shadow: 0 20px 0px -10px black;
+
+    --color-*: initial;
+    --color-transparent: transparent;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-aqua: #20d2ff;
+    --color-aqua-light: #7cdcf5;
+    --color-blue: #0030ff;
+    --color-red: #bf0000;
+    --color-gray: #eeeeee;
+
+    --font-*: initial;
+    --font-mono: 'ibm_vga8', monospaced;
+
+    --text-*: initial;
+    --text-base: 1.35rem;
+    --text-lg: 1.55rem;
+    --text-xl: 2rem;
+}
 
 @font-face {
     font-family: 'ibm_vga8';
@@ -63,10 +84,10 @@ mark {
         p {
             @apply leading-normal;
         }
-  }
+    }
 }
 
-@screen lg {
+@variant lg {
     .content img {
         @apply float-left mr-8;
     }
